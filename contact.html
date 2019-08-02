@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="csscont.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Pooja Notes| Contact Us</title>
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDUMWeW4zUcasO8OpzuVE3BpVlPvbqgKGE",
+			authDomain: "apply-now-c0ede.firebaseapp.com",
+			databaseURL: "https://apply-now-c0ede.firebaseio.com",
+			projectId: "apply-now-c0ede",
+			storageBucket: "",
+			messagingSenderId: "335462355472",
+			appId: "1:335462355472:web:e127b25045e6c82e"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+
+  
+    <script>
+
+      
+        function a() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var sub = document.getElementById("subject").value;
+            var inst = document.getElementById("message").value;
+
+
+            var dt = new Date();
+            var utcDate = dt.toUTCString();
+            console.log(utcDate);
+        if (name.length!=0){
+        if (email.length!=0){
+        if (sub.length!=0){
+        if (inst.length!=0){
+
+            //To Firebase
+            firebase.database().ref("apply/").push({
+                FullName: name,
+                Email: email,
+                Subject: sub,
+                Message: inst,
+                time_stamp: utcDate
+            });
+           alert("Your response has been recorded!!");
+        }}}}
+        else
+        alert("Fill all fields to submit!");
+        }
+        </script>
+
+        <img src="images/logo.PNG" id="logo">
+        <nav class="nav-bar">
+            <a href="index.html" id="nav-id">Home</a>
+            <a href="test.html" id="nav-id">Subjects</a>
+            <a href="about.html" id="nav-id">About Us</a>
+            <a href="contact.html" id="nav-id">Contact Us</a>
+            </nav>
+
+        <div id="getintouch" class="overlay"><br><br><br><br><br><center><h1 style="color:#374050;" id="x">Get In Touch</h1></center><br><br>
+            
+            <br><br><br><br></div><br>
+            <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                            <h3 style="margin:50px;">Send A Message</h3>
+
+                            <div>
+                                    <input class="input" type="text" id="name" placeholder="Name" required><br><br>
+                                    <input class="input" type="email" id="email" placeholder="Email" required><br><br>
+                                    <input class="input" type="number" id="subject" placeholder="Contact" required><br><br>
+                                    <textarea class="input" id="message" placeholder="Enter your Message"></textarea><br><br>
+                                    <br><button type="submit" onclick="a()" class="main-button icon-button pull-right" style="float:right;">Send Message</button>
+                                   
+                                
+                             
+                            </div>
+                      </div>
+                      <div class="col-sm">
+                            <h3 style="margin:50px;">Contact Information</h3>
+                            <div style="margin-left:50px;">
+                            <img src="images/mess.PNG">&emsp;&emsp;<h6 style="display:inline;">notespooja@gmail.com</h6><br>
+                            
+                             <img src="images/call.PNG"><h6 style="display:inline;margin-left:-70px;">+91-9829177167 </h6><br>
+                            
+                            <img src="images/loc.PNG">&emsp;&emsp;<h6 style="display:inline;">6-Gha-42, Jawahar Nagar, Jaipur-302004
+
+                                </h6><br><br>
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14233.943700227217!2d75.82289522521843!3d26.88806936822684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6ed230db24b%3A0xfbf39ac73eb3781!2sJawahar+Nagar%2C+Jaipur%2C+Rajasthan+302007!5e0!3m2!1sen!2sin!4v1557138105480!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+            <div style="float:right;width:50%"></div> 
+            <br><br>
+            <footer style="margin:20px;">
+                    <center><b>Copyright &copy; PoojaNotes&trade;</b></center>
+              </footer>
+              <br>
+        
+          
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+</body>
+</html>

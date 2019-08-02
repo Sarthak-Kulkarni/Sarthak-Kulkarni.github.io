@@ -1,0 +1,29 @@
+
+.display-4{
+    font-weight:bold;
+
+}
+
+.nav-bar {
+    float: right;
+    margin: 10px;
+    background-color: black;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#nav-id {
+    margin: 8px;
+    color: white;
+    font-size: 17px;
+    transition: 1s;
+    font-weight: bold;
+
+}
+
+#nav-id:hover {
+    color: orangered;
+    font-size: 20px;
+
+}

@@ -1,0 +1,126 @@
+*{
+    box-sizing:border-box;
+}
+.nav-bar{
+	float:right;
+	margin:10px;
+	background-color:black;
+	padding: 3px;
+	border: 1px solid black;
+	border-radius: 15px;
+}
+#nav-id{
+	margin:8px;
+	color: white;
+	font-size: 17px;
+	transition: 0.5s;
+    font-weight: bold;
+    text-decoration:none;
+	
+}
+#nav-id:hover{
+	color:orangered;
+	font-size: 20px;
+	
+}body {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+    font-weight: 400;
+    	overflow-x:hidden;
+	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 12px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	color: #374050;
+}
+
+h1 {
+	font-size:38px;
+}
+
+h2 {
+	font-size:30px;
+}
+
+h3 {
+	font-size:24px;
+}
+
+h4 {
+	font-size:18px;
+}
+#logo{
+	height: 150px;
+	width: 200px;
+	margin:10px;
+	
+}
+#getintouch{
+    min-height:30%;
+    min-width:100%;
+    background-image:url('images/hback13.jpg') ; 
+  border-radius:20px;
+  position:relative;
+    
+  z-index: 1;  
+}
+.overlay {
+	position:absolute;
+
+    z-index: 2;
+	min-height:30%;
+    min-width:100%;
+    overflow: auto;
+    background: rgba(100, 100, 100, 0.7); /*can be anything, of course*/
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #EBEBEB;
+	border-radius:4px;
+	background: transparent;
+    padding-left: 15px;
+	padding-right: 15px;
+	-webkit-transition:0.2s border-color;
+	transition:0.2s border-color;
+}
+
+textarea {
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
+	border-color:#FF6700;
+}
+.main-button {
+	position:relative;
+	display:inline-block;
+	padding:10px 30px;
+	background-color: #FF6700;
+	border: 2px solid transparent;
+	border-radius: 40px;
+	color: #FFF;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+.main-button.icon-button:hover , .main-button.icon-button:focus {
+	padding-right: 45px;
+}
+.main-button:hover , .main-button:focus {
+	background-color:#fff;
+	border: 2px solid #FF6700;
+	color:#FF6700;
+}
+#x{
+	transition: 0.3s;
+}
+#x:hover{
+	font-size:300%;
+transition: 0.3s;
+}

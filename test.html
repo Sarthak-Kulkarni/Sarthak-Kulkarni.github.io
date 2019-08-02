@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link href="csshome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <title>Subjects| DBMS</title>
+
+    <style>
+    .grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  margin-right:20%;
+  margin-left:20%;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text > a {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+</style>
+  </head>
+  <body>
+        <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAOAJZ1v5uFWMTiiIvZqzp1XZ7EAfFOwNo",
+                authDomain: "food-website-1caf5.firebaseapp.com",
+                databaseURL: "https://food-website-1caf5.firebaseio.com",
+                projectId: "food-website-1caf5",
+                storageBucket: "food-website-1caf5.appspot.com",
+                messagingSenderId: "859873571109"
+            };
+            firebase.initializeApp(config);
+        </script>
+    
+    <script>
+        service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+        </script>
+
+<nav class="nav-bar">
+        <a href="index.html" id="nav-id">Home</a>
+        <a href="test.html" id="nav-id">Subjects</a>
+        <a href="about.html" id="nav-id">About Us</a>
+        <a href="contact.html" id="nav-id">Contact Us</a>
+        </nav>
+    
+<div class="jumbotron">
+        <h1 class="display-4">DBMS Notes</h1>
+        <p>High quality notes for Database Management Systems for free!!</p>
+        <!--<a class="btn btn-primary btn-lg" href="#" role="a">Learn more</a>-->
+      </div>
+
+      <main class="grid">
+        <article>
+          <img src="images/pdf.jpg">
+          <div class="text">
+            <h3>Introduction to DBMS</h3>
+            <br><br>            
+            <a href="https://firebasestorage.googleapis.com/v0/b/food-website-1caf5.appspot.com/o/Chapter%201.pdf?alt=media&token=c23b692e-e210-4a9f-acb1-1fcc1e9bd025">View</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/pdf.jpg">
+          <div class="text">
+            <h3>ER Model Basics</h3>
+            <br><br>
+            <a href="https://firebasestorage.googleapis.com/v0/b/food-website-1caf5.appspot.com/o/Chapter%202.pdf?alt=media&token=5e8ef018-a074-4566-b0f4-7d42e8edc28d">View</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/pdf.jpg" >
+          <div class="text">
+            <h3>Data Mining</h3>
+            <br>
+            <br><br>
+            <a href="https://firebasestorage.googleapis.com/v0/b/food-website-1caf5.appspot.com/o/Data%20Mining.pdf?alt=media&token=99a94d6b-e709-4ba0-8f8e-2732b9dced81">View</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/pdf.jpg" >
+          <div class="text">
+            <h3>SQL</h3>
+            <br>
+            <br>
+            <a href="https://firebasestorage.googleapis.com/v0/b/food-website-1caf5.appspot.com/o/SQLNOTES.pdf?alt=media&token=2c7a4c79-eac7-439a-80c7-94c20cdc106b">View</a>
+          </div>
+        </article>
+        <br><br>
+        <article>
+          <img src="images/pdf.jpg" >
+          <div class="text">
+            <h3>Transaction Management</h3>
+            <br>
+            <br>
+            <a href="https://firebasestorage.googleapis.com/v0/b/food-website-1caf5.appspot.com/o/transaction_Mgmt.pdf?alt=media&token=5add40c6-2a94-4e77-9c00-217a032b6685">View</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/pdf.jpg" >
+          <div class="text">
+            <h3>Intro to OODBMS</h3>
+            <br>
+            <br>
+             <a href="https://firebasestorage.googleapis.com/v0/b/food-website-1caf5.appspot.com/o/Introduction%20to%20ODBMS.pdf?alt=media&token=8fb8c5f8-7804-4877-9087-a1d0b646276f">View</a>
+          </div>
+        </article>
+      </main>  <br><br>            <div class="card text-center">
+                   
+                    <div class="card-body">
+                      <h5 class="card-title">More Subjects to be added soon...</h5>
+                       <div class="card-footer text-muted">
+                      &copy; Pooja Notes&trade;
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
